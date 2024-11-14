@@ -17,15 +17,6 @@ const Career: React.FC = () => {
       },
       {
         id: '2',
-        title: 'Data Scientist',
-        description: 'Analyzes complex data to find trends and insights for business strategy.',
-        skills: ['Python', 'Machine Learning', 'Data Visualization', 'Statistics'],
-        averageSalary: '$95,000/year',
-        trending: false,
-        suggestedProjects: ['Data Analysis of Sales', 'Predictive Modeling', 'Customer Segmentation'],
-      },
-      {
-        id: '3',
         title: 'Mobile App Developer',
         description: 'Builds mobile applications for iOS and Android platforms.',
         skills: ['Swift', 'Kotlin', 'React Native', 'UI/UX Design'],

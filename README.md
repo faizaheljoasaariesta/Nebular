@@ -1,6 +1,6 @@
 # You can see this project live show on:
 
-- https://nebular.faizaheljoasaariesta.com
+- https://faizaheljoasaariesta.com
 
 # Cloning This Project
 

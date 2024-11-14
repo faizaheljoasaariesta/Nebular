@@ -8,15 +8,15 @@ const Mentorship: React.FC = () => {
     mentors: [
       {
         id: '1',
-        name: 'John Doe',
+        name: 'Faizahel Joasa Ariesta',
         expertise: 'Web Development',
         rating: 4.8,
         availableSlots: ['Monday 10 AM - 12 PM', 'Wednesday 2 PM - 4 PM'],
       },
       {
         id: '2',
-        name: 'Jane Smith',
-        expertise: 'Data Science',
+        name: 'Faalezi Joasa Geminik',
+        expertise: 'Mobile Development',
         rating: 4.7,
         availableSlots: ['Tuesday 3 PM - 5 PM', 'Thursday 10 AM - 12 PM'],
       },
@@ -40,7 +40,7 @@ const Mentorship: React.FC = () => {
     <div className="flex">
       <Sidebar />
       <main className="flex-grow">
-        <MentorshipHub data={mockMentorshipData} />;
+        <MentorshipHub data={mockMentorshipData} />
       </main>
     </div>
   );
