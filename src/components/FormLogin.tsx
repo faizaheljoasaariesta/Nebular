@@ -38,7 +38,7 @@ const FormLogin: React.FC = () => {
         console.log('User already exists in Firestore.');
       }
 
-      navigate('/dashboard');
+      navigate('/tools');
     } catch (error) {
       console.error('Google login error:', error);
       setError('Google login failed');
@@ -51,7 +51,7 @@ const FormLogin: React.FC = () => {
   
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/dashboard');
+      navigate('/tools');
     } catch (error: unknown) {
       if (error instanceof Error) {
         if (error.message.includes('wrong-password')) {

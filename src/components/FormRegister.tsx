@@ -36,7 +36,7 @@ const FormRegister: React.FC = () => {
         createdAt: new Date(),
       });
 
-      navigate('/dashboard');
+      navigate('/tools');
     } catch (error: unknown) {
       if (error instanceof Error) {
         setError(error.message);

@@ -29,9 +29,6 @@ const App: React.FC = () => {
       <Route path="/" element={!user ? <RoleChoose /> : <Navigate to="/tools" />} />
       <Route path="/login" element={!user ? <Login /> : <Navigate to="/tools" />} />
       <Route path="/register" element={!user ? <Register /> : <Navigate to="/login" />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/assessment" element={<Assessment />} />
-      <Route path="/assignment" element={<Assignment />} />
       
       <Route element={<ProtectedRoute isAuth={!!user} />}>
         <Route path="/dashboard" element={<Dashboard />} />
@@ -41,6 +38,9 @@ const App: React.FC = () => {
         <Route path="/career" element={<Career />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/tools" element={<Tools />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/assessment" element={<Assessment />} />
+        <Route path="/assignment" element={<Assignment />} />
       </Route>
 
       <Route path="*" element={<Navigate to={user ? "/tools" : "/login"} />} />
